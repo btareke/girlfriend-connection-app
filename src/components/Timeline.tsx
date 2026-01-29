@@ -37,22 +37,22 @@ export function Timeline({ onBack }: TimelineProps) {
     { name: 'December', season: '', media: 'https://images.unsplash.com/photo-1542609715982-16f4e1e2cfc0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3aW50ZXIlMjBzbm93fGVufDF8fHx8MTc2ODQ3MjUyM3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral', mediaType: 'image', description: 'Year end magic' }
   ];
   const timeline2025Media: Record<string, { media: string; mediaType: 'image' | 'video' | 'youtube'; hasAudio?: boolean }> = {
-    January: { media: '/timeline-2025/January.png', mediaType: 'image' },
-    February: { media: '/timeline-2025/February.PNG', mediaType: 'image' },
-    March: { media: '/timeline-2025/March.MP4', mediaType: 'video' },
-    April: { media: '/timeline-2025/April.MP4', mediaType: 'video' },
-    May: { media: '/timeline-2025/May.MP4', mediaType: 'video' },
-    June: { media: '/timeline-2025/June.PNG', mediaType: 'image' },
+    January: { media: 'https://res.cloudinary.com/dkrfizyhv/image/upload/v1769661935/rewinasworld/timeline-2025/January.jpg', mediaType: 'image' },
+    February: { media: 'https://res.cloudinary.com/dkrfizyhv/image/upload/v1769661865/rewinasworld/timeline-2025/February.jpg', mediaType: 'image' },
+    March: { media: 'https://res.cloudinary.com/dkrfizyhv/video/upload/v1769661937/rewinasworld/timeline-2025/March.mp4', mediaType: 'video' },
+    April: { media: 'https://res.cloudinary.com/dkrfizyhv/video/upload/v1769661417/rewinasworld/timeline-2025/April.mp4', mediaType: 'video' },
+    May: { media: 'https://res.cloudinary.com/dkrfizyhv/video/upload/v1769661939/rewinasworld/timeline-2025/May.mp4', mediaType: 'video' },
+    June: { media: 'https://res.cloudinary.com/dkrfizyhv/image/upload/v1769661935/rewinasworld/timeline-2025/June.png', mediaType: 'image' },
     July: {
       media: 'https://www.youtube.com/embed/hJqjNQURO3A?autoplay=1&mute=0&controls=0&loop=1&playlist=hJqjNQURO3A&playsinline=1',
       mediaType: 'youtube',
       hasAudio: true
     },
-    August: { media: '/timeline-2025/August.MP4', mediaType: 'video' },
-    September: { media: '/timeline-2025/September.mp4', mediaType: 'video' },
-    October: { media: '/timeline-2025/October.MP4', mediaType: 'video' },
-    November: { media: '/timeline-2025/November.MP4', mediaType: 'video' },
-    December: { media: '/timeline-2025/December.mp4', mediaType: 'video' }
+    August: { media: 'https://res.cloudinary.com/dkrfizyhv/video/upload/v1769661424/rewinasworld/timeline-2025/August.mp4', mediaType: 'video' },
+    September: { media: 'https://res.cloudinary.com/dkrfizyhv/video/upload/v1769661947/rewinasworld/timeline-2025/September.mp4', mediaType: 'video' },
+    October: { media: 'https://res.cloudinary.com/dkrfizyhv/video/upload/v1769661944/rewinasworld/timeline-2025/October.mp4', mediaType: 'video' },
+    November: { media: 'https://res.cloudinary.com/dkrfizyhv/video/upload/v1769661941/rewinasworld/timeline-2025/November.mp4', mediaType: 'video' },
+    December: { media: 'https://res.cloudinary.com/dkrfizyhv/video/upload/v1769661864/rewinasworld/timeline-2025/December.mp4', mediaType: 'video' }
   };
 
   const buildYearMonths = (year: number) =>
@@ -151,7 +151,7 @@ export function Timeline({ onBack }: TimelineProps) {
 
       {/* Content */}
       <div className="relative z-10 size-full overflow-auto">
-        <audio ref={audioRef} src="/music/every-kind-of-way.mp3" />
+        <audio ref={audioRef} src="https://res.cloudinary.com/dkrfizyhv/video/upload/v1769661950/rewinasworld/music/every-kind-of-way.mp3" />
         <div className="px-6 py-6">
           <div className="flex flex-wrap gap-4 mb-8">
             <button
@@ -311,7 +311,7 @@ export function Timeline({ onBack }: TimelineProps) {
                       {isComingSoon && (
                         <div className="mt-6 overflow-hidden rounded-2xl border border-white/20 bg-black/20">
                           <video
-                            src="/videos/bae.mp4"
+                            src="https://res.cloudinary.com/dkrfizyhv/video/upload/v1769661948/rewinasworld/videos/bae.mp4"
                             className="w-full h-48 sm:h-56 md:h-64 object-contain"
                             autoPlay
                             loop
