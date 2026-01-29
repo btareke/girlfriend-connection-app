@@ -4,6 +4,3 @@ dist
 .npm-cache
 .env
 .env.local
-public/timeline-2025/
-public/videos/bae.mp4
-public/music/
